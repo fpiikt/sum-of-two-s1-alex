@@ -13,8 +13,6 @@ def sum(d1, s1): #search indices of elements (d1) forming the sum(s1). Each comb
             if d1[i] + d1[i1] == s1:
                 ind = (i+1, i1+1)
                 lst.append(ind)
-        i1=+1
-    i=+1
     return lst   
 
 assert sum([1,2,3,4,5,6,7,8,9], 6) == [(1, 5), (2, 4), (3, 3)], 1 
