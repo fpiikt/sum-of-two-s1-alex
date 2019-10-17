@@ -4,7 +4,7 @@
 Дополнительные комментарии по решению
 Решение реализовано внутри метода sum
 """
-def sum(d1, s1):
+def sum(d1, s1): #search indices of elements (d1) forming the sum(s1). Each combination used only once. Assert - not so good decision, but... 
     lst = []
     i = 0
     i1 = 0
@@ -18,7 +18,7 @@ def sum(d1, s1):
     return lst   
 
 assert sum([1,2,3,4,5,6,7,8,9], 6) == [(1, 5), (2, 4), (3, 3)], 1 
-assert sum([1,2,3], 3) == [(1, 2)], 1 
+assert sum([1,2,3], 4) == [(1, 3), (2, 2)], 1 
 assert sum([100,1001,99,400], 500) == [(1, 4)], 1
 assert sum([0.5,1,7,9,8.3], 17.3) == [(4, 5)], 1
 assert sum([0.5,1,7,9,8.3], 17.2) == [(4, 5)], 0
